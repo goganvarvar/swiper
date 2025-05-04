@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'TT-lakes-Bold';
+    font-style: normal;
+    src: url("fonts/TTLakes/TTLakes-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: 'TT-lakes-Medium';
+    font-style: normal;
+    src: url("fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: 'TT-lakes-Regular';
+    font-style: normal;
+    src: url("fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+}
+body {
+    font-family: sans-serif;
+    background: #f8f8f8;
+    padding: 20px;
+  }
+
+  .swiper-container {
+    background: white;
+    padding: 20px;
+    max-width: 1120px;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .header h2 {
+    font-size: 14px;
+    color: #7E7E82;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .swiper-wrapper {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: #F8F8F8;
+    border-radius: 10px;
+    height: 40px;
+  }
+
+  .swiper-slide img {
+    max-height: 20px;
+    object-fit: contain;
+  }
+
+  .arrow-btn {
+    background: #FF3E79;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .toggle-btn {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: #1B1C21;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle-btn::before {
+    content: "⏷";
+    margin-right: 5px;
+    color: #41F6D7;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .brand-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .brand-grid {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+    }
+
+    .brand-card {
+      min-width: 200px;
+      flex-shrink: 0;
+    }
+
+    .toggle-btn {
+      display: none;
+    }
+  }
