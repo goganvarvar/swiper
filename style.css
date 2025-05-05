@@ -59,10 +59,13 @@ body {
   }
 
   .arrow-btn {
-    background: #FF3E79;
+    background: #FFFFFF;
     border-radius: 50%;
-    width: 24px;
-    height: 24px;
+    border-color: #FF3E79;
+    border-width: 5px;
+    border-style: dashed;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +73,14 @@ body {
     font-size: 14px;
     border: none;
     cursor: pointer;
+      
+  }
+  .arrow-btn-str {
+    
+    background-image: url("img/strelka.svg");  /* ваша картинка */
+    background-repeat: no-repeat;         /* не тайлим изображение */
+    background-position: center;   /* центрируем картинку */
+    background-size: cover;      
   }
 
   .toggle-btn {
@@ -84,9 +95,13 @@ body {
   }
 
   .toggle-btn::before {
-    content: "⏷";
-    margin-right: 5px;
-    color: #41F6D7;
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: relative;
+    background-image: url("img/expand.svg");
+    transform: translateY(-5%);
+    background-repeat: no-repeat;
   }
 
   .hidden {
