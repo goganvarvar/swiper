@@ -58,7 +58,7 @@ body {
     object-fit: contain;
   }
 
-  .arrow-btn {
+  /* .arrow-btn {
     background: #FFFFFF;
     border-radius: 50%;
     border-color: #FF3E79;
@@ -73,7 +73,11 @@ body {
     font-size: 14px;
     border: none;
     cursor: pointer;
-      
+  } */
+  .arrow-btn{
+    background-image: url("img/strelka.svg"); 
+    background-repeat: no-repeat;       
+    background-position: center;
   }
   .arrow-btn-str {
     
